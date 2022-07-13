@@ -227,7 +227,7 @@ if (height) {
 } else {
       console.log ('Height is UNDEFINED')
 }
-*/
+
 
 const age = '18';
 if (age === 18) console.log ('You just became an adult :D (strict)');
@@ -249,3 +249,59 @@ if (favorite === 23) {
 }
 
 if (favorite !== 23) console.log ('Why not 23?');
+
+
+const hasDriversLicense = true; // A
+const hasGoddVision = true; // B
+
+console.log(hasDriversLicense && hasGoddVision);
+console.log(hasDriversLicense || hasGoddVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoddVision;
+
+// if(hasDriversLicense && hasGoddVision) {
+//       console.log('Sarah is able to drive!');
+// } else {
+//       console.log('Someone else should drive...');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoddVision && isTired);
+
+if(hasDriversLicense && hasGoddVision && !isTired) {
+      console.log('Sarah is able to drive!');
+} else {
+      console.log('Someone else should drive...');
+}
+*/
+
+// Coding Challenge #3
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//       console.log('Dolphins win the trophy 🏆');
+// } else if (scoreKoalas > scoreDolphins) {
+//       console.log('Koalas win the trophy 🏆');
+// } else if (scoreDolphins === scoreKoalas) {
+//       console.log('Both win the trophy!');
+// }
+
+// Bonus 1
+
+const scoreDolphins = (97 + 112 + 80) / 3;
+const scoreKoalas = (109 + 95 + 50) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+      console.log('Dolphins win the trophy 🏆');
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+      console.log('Koalas win the trophy 🏆');
+} else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+      console.log('Both win the trophy!');
+} else {
+      console.log('No one wins trophy 😭');
+}
